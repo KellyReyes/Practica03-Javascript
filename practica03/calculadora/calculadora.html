@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html> 
+     <head> 
+         <title> CALCULADORA </title>
+         <link type="text/css" href="estilo.css" rel="stylesheet">
+        
+         <script type="text/javascript" src="funcion.js"></script>
+                     
+        </script>
+
+    </head> 
+        <body >
+            <h1>CALCULADORA</h1>
+            
+           <form >
+                <div class="calculadora">
+            <input class="sinborde size" type="span" id="respuesta" name="respuesta" style="WIDTH: 280.3px; HEIGHT: 30px " disabled ><br>
+            <input  class="sinborde color " type="span" id="resol" name="resol"  disabled >
+            
+               <table class="posicion" >
+                <tr>
+                        <td> <input class="cbutton"type="button" id="flecha" value="<-" onclick="eliminarNumero (form.respuesta)"/><br></td>
+                            <td> <input class="cbutton"type="button" id="ce" value="ce" onclick="limpiar()"><br></td>
+                                <td> <input class="cbutton"type="button" id="c" value="c" onclick="limpiar()"><br></td>
+                                <td> <input class="cbutton"type="button" id="+-" value="+-" onclick="masMenos()"><br></td>
+                                <td> <input class="cbutton"type="button" id="raiz" value="√" onclick="raizes()"><br></td>
+                </tr>
+
+            <tr>
+                <td><input class="cbutton" type="button" id="numero7" value="7" onclick="agregarNumero(form.respuesta, '7')" > <br></td>
+                <td><input class="cbutton"type="button" id="numero8" value="8" onclick="agregarNumero(form.respuesta, '8')"> <br></td>
+                <td><input class="cbutton" type="button" id="numero9" value="9" onclick="agregarNumero(form.respuesta, '9')"> <br></td>
+                <td><input class="cbutton"type="button" id="btnDivision" value="/"  onclick="agregarNumero(form.respuesta, '/')"> </td>
+                <td> <input class="cbutton"type="button" id="porcentaje" value="%"onclick="porcentajes()"><br></td>
+                
+                </tr>
+
+            <tr>
+                 <td><input class="cbutton"type="button" id="numero4" value="4" onclick="agregarNumero(form.respuesta, '4')"> <br></td>
+                 <td><input class="cbutton" type="button" id="numero5" value="5" onclick="agregarNumero(form.respuesta, '5')"> <br></td>
+                 <td><input class="cbutton"type="button" id="numero6" value="6" onclick="agregarNumero(form.respuesta, '6')"> <br></td>
+                 <td><input class="cbutton" type="button" id="btnMultiplicar" value="*"  onclick="agregarNumero(form.respuesta, '*')"></td>
+                 <td> <input class="cbutton"type="button" id="inversa" value="1/x" onclick="calcu()"><br></td>
+                 </tr>
+
+            <tr>
+                 <td><input class="cbutton"type="button" id="numero1" value="1" onclick="agregarNumero(form.respuesta, '1')"> <br></td>
+                 <td><input class="cbutton"type="button" id="numero2" value="2" onclick="agregarNumero(form.respuesta, '2')"> <br></td>
+                 <td><input class="cbutton"type="button" id="numero3" value="3" onclick="agregarNumero(form.respuesta, '3')"> <br></td>
+                 <td><input class="cbutton"type="button" id="btnRestar" value="-"  onclick="agregarNumero(form.respuesta, '-')"></td>
+                 <td rowspan="2"><input class="cbutton"type="button" id="igual" value="=" onclick="calcular(form)" style="WIDTH: 50px; HEIGHT: 100px "> </td>
+                 
+                 </tr>
+                 <tr>
+                
+                        <td colspan="2"><input class="cbutton"type="button" id="numero 0" value="0" onclick="agregarNumero(form.respuesta, '0')" style="WIDTH: 105px; HEIGHT: 50px "><br> </td>
+                        <td><input class="cbutton"type="button" id="," value="." onclick="agregarNumero(form.respuesta, '.')"> <br></td>
+                        <td ><input class="cbutton"type="button" id="btnSumar" value="+" onclick="agregarNumero(form.respuesta, '+')" > </td>
+                        
+                        
+                         </tr>
+                 
+                </table>
+           
+            
+           </form>
+        </div>
+
+
+    </body> 
+</html>
+

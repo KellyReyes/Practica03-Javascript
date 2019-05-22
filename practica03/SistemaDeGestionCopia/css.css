@@ -1,0 +1,22 @@
+.caja {
+    width: 1500;
+    height: 600px;
+    position: relative;
+    display: block;
+    background: rgb(144, 128, 77);
+    bottom: 400;
+}
+
+.sinborde {
+    top: 150px;
+    border: 2px;
+    left: 400px;
+    width: 400px;
+    height: 200px;
+    text-align: center;
+    border: black solid;
+    position: absolute;
+    display: block;
+    background-color: antiquewhite;
+    margin-top: 4pxñ
+}
